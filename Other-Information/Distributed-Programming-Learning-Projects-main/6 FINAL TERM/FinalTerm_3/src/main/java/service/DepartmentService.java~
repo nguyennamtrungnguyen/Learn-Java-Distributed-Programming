@@ -1,7 +1,0 @@
-package service;
-
-/**
- *  Admin 5/5/2025
- *  
-**/public interface DepartmentService {
-}

@@ -35,12 +35,17 @@ public class Main {
 //                (Status) objects[5]
 //        ));
 
-        DoctorRepository doctorRepository = new DoctorRepository();
-        doctorRepository.getDoctorWorkload().forEach(objects -> System.out.println(
-                (String) objects[0] +
-                (String) objects[1] +
-                (Date) objects[2] +
-                (Long) objects[3]
-        ));
+//        DoctorRepository doctorRepository = new DoctorRepository();
+//        doctorRepository.getDoctorWorkload().forEach(objects -> System.out.println(
+//                (String) objects[0] +
+//                (String) objects[1] +
+//                (Date) objects[2] +
+//                (Long) objects[3]
+//        ));
+appointmentRepository.getTopDoctorByAppointments().forEach(objects -> System.out.println(
+       (String) objects[0] +
+               (String) objects[1] + (Long) objects[2]
+));
+//        appointmentRepository.countAppointmentsByStatus().forEach((k,v)-> System.out.println(k + "|" + v));
     }
 }

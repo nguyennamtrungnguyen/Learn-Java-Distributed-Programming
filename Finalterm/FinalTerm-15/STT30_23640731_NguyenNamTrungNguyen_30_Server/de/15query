@@ -1,0 +1,59 @@
+1
+
+Đề: Liệt kê danh sách lịch khám.
+Hàm: getAppointmentDetails(): List<AppointmentDTO>
+Yêu cầu: Hiển thị mã bác sĩ, tên bác sĩ, mã bệnh nhân, tên bệnh nhân, thời gian khám và trạng thái.
+
+2
+
+Đề: Liệt kê các bác sĩ có từ 2 lịch khám trở lên trong cùng một ngày.
+Hàm: getDoctorWorkload(): List<Object[]>
+Yêu cầu: Hiển thị mã bác sĩ, họ tên, ngày khám và số lượng lịch khám.
+
+3
+
+Đề: Thống kê số lượng lịch khám theo trạng thái.
+Hàm: countAppointmentsByStatus(): Map<String, Long>
+Yêu cầu: Thống kê số lịch theo từng trạng thái PENDING, CONFIRMED, CANCELLED.
+
+4
+
+Đề: Liệt kê bác sĩ có nhiều lịch khám nhất.
+Hàm: getTopDoctorByAppointments(): List<Object[]>
+Yêu cầu: Hiển thị mã bác sĩ, tên bác sĩ và số lượng lịch khám.
+
+5
+
+Đề: Liệt kê bệnh nhân có nhiều lịch khám nhất.
+Hàm: getTopPatientByAppointments(): List<Object[]>
+Yêu cầu: Hiển thị mã bệnh nhân, tên bệnh nhân và số lượng lịch khám.
+
+6
+
+Đề: Tìm bác sĩ theo tên gần đúng.
+Hàm: findDoctorsByName(String keyword): List<Doctor>
+Yêu cầu: Tìm các bác sĩ có tên chứa keyword nhập vào.
+
+7
+
+Đề: Liệt kê các bác sĩ chưa từng có lịch khám.
+Hàm: getDoctorsWithoutAppointments(): List<Doctor>
+Yêu cầu: Hiển thị danh sách bác sĩ chưa từng khám bệnh nhân nào.
+
+8
+
+Đề: Thống kê số lượng lịch khám của mỗi bác sĩ.
+Hàm: countAppointmentsPerDoctor(): List<Object[]>
+Yêu cầu: Hiển thị mã bác sĩ, tên bác sĩ và tổng số lịch khám tương ứng.
+
+9
+
+Đề: Tìm lịch khám mới nhất.
+Hàm: getLatestAppointments(): List<Appointment>
+Yêu cầu: Hiển thị các lịch khám có thời gian mới nhất.
+
+10
+
+Đề: Liệt kê top 3 bác sĩ có nhiều lịch khám nhất.
+Hàm: getTop3DoctorsByAppointments(): List<Object[]>
+Yêu cầu: Hiển thị 3 bác sĩ có số lượng lịch khám cao nhất.
